@@ -3488,7 +3488,7 @@ case 'scbot':
 anu = `──────────────────
 NOTE : _DILARANG JUAL SC BOT_
 ──────────────────
-_LINK DOWNLOAD : https://youtube.com/
+_LINK DOWNLOAD : https://youtu.be/bqkYyWzE5wQ
 _KANG RECODE : ${NamaOwner}_
 ⍟ ────────────────── ⍟`
 buttons = [
