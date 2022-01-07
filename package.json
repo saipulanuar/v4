@@ -2,7 +2,7 @@
   "name": "Alpha Botzz",
   "version": "0.0.1",
   "description": "Alpha Botz",
-  "main": "node .",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
