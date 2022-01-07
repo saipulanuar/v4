@@ -155,7 +155,7 @@ zeksApi = settings.ZeksApi
 YuzApi = 'Yuzzu'
 zerkey = settings.Zerkey
 lolkey = 'KurrXd'
-Bear = ''
+Bear = 'KingOfBear'
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
 function kyun(seconds) {
@@ -2225,18 +2225,32 @@ alpha.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentio
 break
  //━━━━━━━━━━━━━━━[ BAHAN GABUT ]━━━━━━━━━━━━━━━━━//
 case 'gachacecan':
-reply (`Masi Proses Perbaikan Oleh King Of Bear`)
+           try {
+           sticWait(from)
+           bo = args.join(' ')
+           cecanz = await getBuffer(`https://api.xteam.xyz/randomimage/cewe?APIKEY=${Bear}`)
+           await alpha.sendMessage(from, cecanz, image, { quoted:mek,caption:'Jangan Lupa Bahagia🗿' })
+           } catch(e) { 
+              reply(`${e}`)
+           }
 break
 case 'gachacogan':
-reply (`Masi Proses Perbaikan Oleh King Of Bear`)
+           try {
+           sticWait(from)
+           bo = args.join(' ')
+           coganz = await getBuffer(`https://api.xteam.xyz/randomimage/cowo?APIKEY=${Bear}`)
+           await alpha.sendMessage(from, coganz, image, { quoted:mek,caption:'Jangan Lupa Bahagia🗿' })
+           } catch(e) { 
+              reply(`${e}`)
+           }
 break
 case 'artinama':
-const random = (teks) => {alpha.sendMessage(from, `[ *SILAHKAN MASUKAN TEXT* ]\n🪀 *CONTOH* : ${prefix + body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()}=Bear`, text, {quoted: fvid})}
+const random = (teks) => {alpha.sendMessage(from, `[ *SILAHKAN MASUKAN TEXT* ]\n🪀 *CONTOH* : ${prefix + body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()}Bear`, text, {quoted: fvid})}
 if (args.length < 1) return random("Udin")
 			saipul = args[0]
-		    nyz6 = await fetchJson(`https://api.lolhuman.xyz/api/artinama?apikey=88f7e906f709e555755ed4ce&nama=${saipul}`)
+		    nyz6 = await fetchJson(`https://api.xteam.xyz/primbon/artinama?q=${body.slice(10)}&APIKEY=${Bear}`)
 		    nyz7 = `[ *ARTI NAMA* ]\n`,
-		    nyz7 += `*ARTINAMA* : ${nyz6.result.url}`
+		    nyz7 += `*ARTINAMA* : ${nyz6.result}`
 		    reply(nyz7)
 break
 case 'jodoh':
@@ -2267,7 +2281,7 @@ break
                     if (args.length < 1) return reply(`*Example :*\n${prefix + command} King Of Bear Whatsapp`)
 					teksnya = args.join(" ")
 					sticWait(from)
-					anu = await fetchJson(`https://xnxxapi.herokuapp.com/api/maker3d?text=${teksnya}&apikey=xnxx`)
+					anu = await fetchJson(`https://api.xteam.xyz/textpro/holographic3d?text=${body.slice(9)}&APIKEY=${Bear}`)
 					buffer1 = await getBuffer(anu.result.results)
 					alpha.sendMessage(from, buffer1, image, { quoted:mek,caption:'Nih Ngab' })
 					break
@@ -2303,7 +2317,7 @@ break
 if (args.length < 1) return reply('*Teks nya mana?*') 
 tahta = args.join(" ")
 sticWait(from)
-tahta = await getBuffer(`https://api.zeks.me/api/hartatahta?text=${tahta}&apikey=apivinz`)
+tahta = await getBuffer(`https://api.xteam.xyz/tahta?text=${body.slice(7)}&APIKEY=${Bear}`)
 alpha.sendMessage(from, tahta, image, { quoted:mek,caption:'Nih Ngab' })
 break
 case 'snow': 
@@ -2311,7 +2325,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 if (args.length < 1) return reply('*Teks nya mana?*') 
 snow = args.join(" ")
 sticWait(from)
-snow = await getBuffer(`https://api.zeks.me/api/snowwrite?text1=HartaTahta&text2=${snow}&apikey=apivinz`)
+snow = await getBuffer(`https://api.xteam.xyz/textpro/snowtext?text=${body.slice(6)}&APIKEY=${Bear}`)
 alpha.sendMessage(from, snow, image, { quoted:mek,caption:'Nih Ngab' })
 break
 case 'pubg': 
@@ -2555,12 +2569,22 @@ cslogo = await getBuffer(`https://api.zeks.me/api/cslogo?text=${cslogo}&apikey=a
 alpha.sendMessage(from, cslogo, image, { quoted:mek,caption:'Nih Ngab' })
 break
 case 'meme':
+case 'memeindo':
+           try {
+           sticWait(from)
+           bo = args.join(' ')
+           meme = await getBuffer(`https://api.xteam.xyz/randomimage/meme?APIKEY=${Bear}`)
+           await alpha.sendMessage(from, meme, image, { quoted:mek,caption:'Jangan Lupa Ketawa🗿' })
+           } catch(e) { 
+              reply(`${e}`)
+           }
+           break
 case 'darkjoke':
            try {
            sticWait(from)
            bo = args.join(' ')
-           mem = await getBuffer(`https://api.lolhuman.xyz/api/meme/memeindo?apikey=${lolkey}`)
-           await alpha.sendMessage(from, mem, image, { quoted:mek,caption:'Jangan Lupa Ketawa🗿' })
+           darkjoke = await getBuffer(`https://api.xteam.xyz/randomimage/darkjoke?APIKEY=${Bear}`)
+           await alpha.sendMessage(from, darkjoke, image, { quoted:mek,caption:'Jangan Lupa Ketawa🗿' })
            } catch(e) { 
               reply(`${e}`)
            }
